@@ -1,0 +1,26 @@
+{
+    "env": {
+        "smlrcCompilerPath": "/home/cocus/mystuff/80c188/smlr-c-stuff/SmallerC",
+        "smlrcDriver": "${smlrcCompilerPath}/smlrcc",
+        "smlrcDefaultIncludePath": "${smlrcCompilerPath}/v0100/include"
+      },
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${smlrcDefaultIncludePath}"
+            ],
+            "defines": [
+                "__SMALLER_C_16__",
+                "TEST_RODATA",
+                "LOAD_OFFSET=0x200"
+            ],
+            "compilerPath": "${smlrcDriver}",
+            "cStandard": "c89",
+            "cppStandard": "gnu++98",
+            "intelliSenseMode": "gcc-x86"
+        }
+    ],
+    "version": 4
+}
